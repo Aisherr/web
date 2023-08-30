@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Nunito+Sans:opsz@6..12&family=Roboto+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box; 
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color:#080808;
+    background-color: darkcyan;
+}
+h2 .name{
+    color:darkcyan;
+}
+h2{
+    font-size: 50px;
+}
+.heading{
+    font-size: 50px;
+}
+.home{
+    margin-right: 60px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    color:#080808;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    font-weight: 200;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:darkcyan;
+    position: absolute;
+    left: 0;
+    bottom:-6px ;
+    transition:0.5s ;
+
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+.btn{
+    font-size:14px;
+    border-radius:3px;
+    cursor: pointer;
+}
+.btn a{
+    color: #080808;
+    text-decoration: none;
+}
+
+
+
+.header{
+    background-image: url(images/ap.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.head{
+    margin-top:10%;
+    font-size: 15px;
+    padding-top: 3%;
+    padding-left:30px ;
+      
+}
+.head h2{
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+ 
+.main{
+    position: absolute;
+    top: 10px;
+    padding-left: 270px;
+    margin: 400px 0 0 50px;
+}
+/*--------About Section---------*/
+.about{
+    display: flex;
+    justify-content:left;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 140vh;
+    padding-top: 3% ;
+    padding-left: 30px;
+}
+.about-left-side{
+    padding-top: 10%;
+}
+.about-left-side h2{
+    font-size: 55px;
+    padding-bottom:25px ;
+    font-weight: bolder;
+    color: #080808;
+
+}
+.about-left-side h3{
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700!important;
+}
+.about-left-side p{
+    color: #080808;
+    font-size: 18px;
+    padding-right:40px ;
+    line-height: 26px;
+    padding-top: 4%;
+    padding-bottom: 10%;
+}
+button{
+    padding: 5px 40px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    background: linear-gradient(brown 40%, darkcyan 60%);
+}
+.about-right-side img{
+    width:450px;
+    height: 600px;
+    padding-top: 25%;
+}
+
+/*-------Services Section-------*/
+.what{
+    width: 100%;
+    height: 280vh;
+    background-color:darkcyan;
+    padding-top: 3%;
+    padding-left: 30px;
+}
+.what h2{
+  font-size: 70px;
+  font-weight: bolder;
+}
+hr{
+  margin: 1% 2%;
+  background: linear-gradient(brown 40%, darkcyan 60%);
+  margin-left: 0;
+  padding: 10px 0;
+}
+.what p{
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    line-height: 1.5;
+    font-size: 22px;
+    font-weight:bolder;
+
+}
+.what p span{
+    font-size:30px ;
+    color:brown;
+}
+.what p, 
+.what button{
+    margin-left: 55%;
+
+}
+.cards{
+    margin-top:10%;
+    margin-right: 10%;
+    display: flex;
+    background-color: grey;
+}
+.box{
+    padding: 60px 50px;
+    color: #080808;
+}
+.box h2{
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.box h5{
+    font-size: 16px;
+    padding-bottom: 40px;
+    font-weight: bolder;
+}
+ .boxa{
+    background-color: #b8b8b8;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+}
+.boxb{
+    background-color: #9c9c9c;
+}
+.boxc{
+    background-color:#7f7f7f;
+}
+.boxd{
+    background-color: #636363;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.images img{
+   margin-top: 15%;
+   border-radius: 4%;
+}
+/*---------Educational tips------*/
+#educational-tips{
+    padding-top: 3%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.edu-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.edu{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.container h2{
+    font-size: 70px;
+    font-weight: bolder;
+  }
+
+.edu img{
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    display: block;
+    transition:transform 0.5s ;
+
+}
+.layer{
+    width: 100%;
+    color: #fff;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),brown,darkcyan);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    transition: height 0.5s;
+    
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: darkcyan;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height:60px ;
+    border-radius:50%;
+    text-align: center;
+}
+.edu:hover img{
+    transform: scale(1.1);
+
+}
+.edu:hover .layer{
+    height: 100%;
+}
+
+/*--------Contact--------*/
+.contact {
+    background-color: darkcyan;
+    color: #080808;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding:4% 4%;
+    padding-top: 15%;
+}
+.contact-left-side h2, 
+.contact-right-side h3{
+    font-size: 30px;
+    padding-bottom: 40px;
+    letter-spacing: 2px;
+
+}
+input{
+    padding: 20px 40px;
+    width: 150%;
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+.contact-left-side h1{
+    padding-top: 40px;
+    font-size: 32px;
+}
+
+.contact-left-side p{
+    padding-top: 90px;
+}
+.contact-left-side p span{
+    color:brown;
+    cursor: pointer;
+}
+.contact-right-side h4{
+    font-size: 16px;
+    font-weight:bolder;
+    padding-bottom: 20px;
+    
+}
+.icons{
+    padding-top: 50px;
+}
+.icons i {
+    border-radius: 80px;
+    border: 2px solid brown;
+    font-size: 25px;
+    padding: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+.icons i:hover{
+    background-color:grey;
+}
+#msg{
+    color:brown;
+    margin-top:3%;
+    display: block;
+}
+
+
+
+
+
+
+
